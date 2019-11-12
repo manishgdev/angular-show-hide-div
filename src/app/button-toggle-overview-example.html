@@ -4,11 +4,13 @@
   <mat-button-toggle value="underline">Underline</mat-button-toggle>
 </mat-button-toggle-group>
 <br/>
+<br/>
+{{currState}}<br/>
 <button mat-icon-button (click)="showHideBelowDiv();">
-  <mat-icon *ngIf="currState">expand_more</mat-icon>
-  <mat-icon *ngIf="!currState">expand_less</mat-icon>
-</button ><br/>
-<ng-container *ngIf="currState">Display Hide Show Content Here</ng-container>
+  <mat-icon *ngIf="currState">expand_less</mat-icon>
+  <mat-icon *ngIf="!currState">expand_more</mat-icon>
+</button >
+<p><ng-container *ngIf="currState">Display Hide Show Content Here</ng-container></p>
 
 
 <!-- Copyright 2019 Google LLC. All Rights Reserved.
